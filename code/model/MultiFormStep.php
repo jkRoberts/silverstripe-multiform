@@ -31,7 +31,7 @@ class MultiFormStep extends DataObject {
 	 * @var array|string
 	 */
 	public static $next_steps;
-	
+
 	/**
 	 * Each {@link MultiForm} subclass needs at least
 	 * one step which is marked as the "final" one
@@ -77,14 +77,14 @@ class MultiFormStep extends DataObject {
      *
      * @var string
      */
-    static $next_button_text = 'Next';
+    public static $next_button_text = 'Next';
 
     /**
      * Title of the previous button (For previous step)
      *
      * @var string
      */
-    static $previous_button_text = 'Back';
+    public static $previous_button_text = 'Back';
 
 
 	/**
