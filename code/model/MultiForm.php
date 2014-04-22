@@ -104,8 +104,7 @@ abstract class MultiForm extends Form {
 		// Get the current step available (Note: either returns an existing
 		// step or creates a new one if none available)
 		$currentStep = $this->getCurrentStep();
-		// print the current step
-		var_dump($currentStep);
+		
 		// Set the step returned above as the current step
 		$this->setCurrentStep($currentStep);
 
@@ -114,8 +113,7 @@ abstract class MultiForm extends Form {
 
 		// Set up the fields for the current step
 		$fields = $currentStep->getFields();
-		//print the fields
-		var_dump($fields);
+
 		// Set up the actions for the current step
 		$actions = $this->actionsFor($currentStep);
 
