@@ -210,7 +210,7 @@ abstract class MultiForm extends Form {
 	 * @param MultiFormStep $step A subclass of MultiFormStep
 	 * @return boolean The return value of write()
 	 */
-	protected function setCurrentStep($step) {
+	public function setCurrentStep($step) {
 		$this->session->CurrentStepID = $step->ID;
 		$step->setForm($this);
 
